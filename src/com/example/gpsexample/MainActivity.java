@@ -345,7 +345,7 @@ public void onCreate(Bundle savedInstanceState)
 			 calpitch=(int) Math.toDegrees(prefValues[1]);
      		 calroll=(int) Math.toDegrees(prefValues[2]);
 	        }
-	        else if(mRotation==+)
+	        else if(mRotation==Surface.ROTATION_180)
 	        {
 	        	 calpitch=(int) orientationValues[1];
 	     		 calroll=(int) orientationValues[2]; 	
