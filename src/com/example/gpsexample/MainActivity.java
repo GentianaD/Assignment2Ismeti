@@ -192,8 +192,7 @@ public void onCreate(Bundle savedInstanceState)
     {
         location.getLatitude();
         location.getLongitude();
-        speed = location.getSpeed();
-        SPEED=speed;
+       SPEED=speed;
     	d.invalidate();
             
     }
