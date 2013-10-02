@@ -267,7 +267,7 @@ public void onCreate(Bundle savedInstanceState)
 		    	{
 		    	float cl = event.values[0];
 		        
-		       if(cl<=(float)30 && cl>1)
+		       if(cl<=(float)35 && cl>1)
 		       {
 		    	   try
 		    	   {
