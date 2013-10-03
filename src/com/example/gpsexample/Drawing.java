@@ -71,18 +71,7 @@ public class Drawing extends View {
 		paint.setColor(Color.RED);
 		paint.setStyle(Paint.Style.STROKE);
 		paint.setStrokeJoin(Paint.Join.ROUND);
-		//Setting the size of the rectangle almost as the size of the canvas
-		destinationRect.set(0, 0, squareWidth, squareHeight);
-		try {
-			//Drawing the bitmap into the given rectangle (area)
-			canvas.drawBitmap(speedometer, null, destinationRect, null);
-		} catch (Exception ex) {
-
-		}
-		//Drawing the line which starts in the center of the bottom line and the other point
-		//depends on the speed to be shown (X and Y are calculated above) 
-		canvas.drawLine(startX, startY, (float) X, (float) Y, paint);
-
+	
 	}
 
 }
