@@ -303,14 +303,22 @@ implements OnMyLocationButtonClickListener,
 	    }
 	    private float Distance( double nLat1, double nLon1, double nLat2, double nLon2 )
 		{
-	    	Location A = new Location("Loc1");
-	    	A.setLatitude(nLat1);
-	    	A.setLongitude(nLon1);
-	    	Location B = new Location("Loc2");
-	    	B.setLatitude(nLat1);
-	    	B.setLongitude(nLon1);
-	    	return A.distanceTo(B);
-	    	
+	    	//Taken From Jaimerios.com it uses haversine formula to calculate distance.
+		    double nRadius = 6371; // Earth's radius in Kilometers
+		    
+		    // Get the difference between our two points
+		    // then convert the difference into radians
+		    double nDLat = Math.toRadians(nLat2 - nLat1);
+		    double nDLon = Math.toRadians(nLon2 - nLon1);
+
+		    // Here is the new line
+		    nLat1 =  Math.toRadians(nLat1);
+		    nLat2 =  Math.toRadians(nLat2);
+
+		    double nA = Math.pow ( Math.sin(nDLat/2), 2 ) + Math.cos(nLat1) * Math.cos(nLat2) * Math.pow ( Math.sin(nDLon/2), 2 );
+		    double nC = 2 * Math.atan2( Math.sqrt(nA), Math.sqrt( 1 - nA ));
+		    float nD = (float) (nRadius * nC);
+		    return nD; // Return our calculated distance
 		}
 }
 
