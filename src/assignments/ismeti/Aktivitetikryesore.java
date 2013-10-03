@@ -1,3 +1,13 @@
+/*
+ * This code is written by:
+ * Gentiana Desipojci
+ * Lavderim Shala
+ * Isuf Deliu
+ * Agnesa Belegu
+ */
+
+
+
 package assignments.ismeti;
 
 import java.text.DecimalFormat;
@@ -121,6 +131,7 @@ implements OnMyLocationButtonClickListener,
 		return true;
 	}
 		private void setUpMapIfNeeded() {
+			//Taken from google map examples
 	        // Do a null check to confirm that we have not already instantiated the map.
 	        if (mMap == null) {
 	            // Try to obtain the map from the SupportMapFragment.
