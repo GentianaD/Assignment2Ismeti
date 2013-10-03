@@ -62,16 +62,11 @@ public class Drawing extends View {
 		double X = startX + R * Math.cos(Math.toRadians(S));
 		double Y = startY + R * Math.sin(Math.toRadians(S));
 		//Used later to set the rectangle dimensions
-		int squareWidth = canvasWidth - 1;
+		/*int squareWidth = canvasWidth - 1;
 		int squareHeight = canvasHeight - 1;
 		Rect destinationRect = new Rect();
+*/
 
-		paint.setAntiAlias(true);
-		paint.setStrokeWidth(6f);
-		paint.setColor(Color.RED);
-		paint.setStyle(Paint.Style.STROKE);
-		paint.setStrokeJoin(Paint.Join.ROUND);
-	
 	}
 
 }
