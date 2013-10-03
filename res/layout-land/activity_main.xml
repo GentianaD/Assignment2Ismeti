@@ -16,7 +16,7 @@
         android:layout_toLeftOf="@+id/linearLayout1"
         android:background="@drawable/speedobcg_normal_land">
         
-        <com.example.gpsexample.Drawing
+        <assignments.ismeti.Drawing
 	        android:id="@+id/view"
 	        android:layout_width="wrap_content"
 	        android:layout_height="match_parent"

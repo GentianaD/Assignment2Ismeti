@@ -4,7 +4,6 @@
     <string name="app_name">ISMETI</string>
     <string name="menu_settings">Einstellungen</string>
     <string name="title_activity_device_speed_demo">DeviceSpeedDemoActivity</string>
-    <string name="info">Aufwartung GPS signal...</string>
     <string name="unit_km">Kilometer</string>
     <string name="unit_miles">Meilen</string>
     <string name="setting_unit">Maßeinheit</string>
