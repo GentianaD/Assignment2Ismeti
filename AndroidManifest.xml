@@ -23,7 +23,11 @@
 
     <application
         android:allowBackup="true"
+<<<<<<< HEAD
         android:icon="@drawable/ic_launcher"
+=======
+        android:icon="@drawable/ic_ismeti"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <meta-data android:name="com.google.android.maps.v2.API_KEY"
@@ -37,6 +41,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.example.gpsexample.Aktivitetikryesore"
+            android:label="@string/app_name" >
+        </activity>
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
     </application>
 
 </manifest>

@@ -4,14 +4,21 @@
     android:id="@+id/ll1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+<<<<<<< HEAD
 
     android:divider="?android:attr/listDivider"
     android:orientation="vertical"
     tools:context=".MainActivity" >
+=======
+    android:divider="?android:attr/listDivider"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_carbon">
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="255dp"
         android:layout_alignParentTop="true"
         android:gravity="center"
@@ -22,21 +29,43 @@
             android:layout_width="wrap_content"
             android:layout_height="252dp"
             android:layout_marginRight="20dp"
+=======
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/bicyclebcg_large" >
+
+        <ImageView
+            android:id="@+id/imgBikeSide"
+            android:layout_width="265dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="3dp"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/side" />
 
         <ImageView
             android:id="@+id/imgBikeFront"
+<<<<<<< HEAD
             android:layout_width="183dp"
             android:layout_height="132dp"
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/front" />
 
+=======
+            android:layout_width="265dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@string/BikeDesc"
+            android:src="@drawable/front" />
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignBottom="@+id/view"
         android:layout_below="@+id/linearLayout1"
         android:background="@drawable/speedobcg" >
@@ -62,6 +91,25 @@
         android:layout_below="@+id/linearLayout1" />
 
     <SeekBar
+=======
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/speedobcg_large" >
+
+        <com.example.gpsexample.Drawing
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+    
+
+ <SeekBar
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:id="@+id/seekBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,6 +128,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:onClick="btnRecTrackonClick"
+<<<<<<< HEAD
+=======
+        android:textColor="@android:color/white"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/strBtnrecord" />
 
     <TextView
@@ -89,8 +141,13 @@
         android:layout_alignBaseline="@+id/textView1"
         android:layout_alignBottom="@+id/textView1"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:text="@string/Auto"
         android:textColor="@android:color/white" />
+=======
+        android:textColor="@android:color/white"
+        android:text="@string/Auto" />
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <TextView
         android:id="@+id/textView1"
@@ -99,8 +156,23 @@
         android:layout_above="@+id/seekBar"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="17dp"
+<<<<<<< HEAD
         android:text="@string/Off"
         android:textColor="@android:color/white" />
+=======
+        android:textColor="@android:color/white"
+        android:text="@string/Off" />
+
+    <TextView
+        android:id="@+id/On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:textColor="@android:color/white"
+        android:text="@string/On" />
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <ImageView
         android:id="@+id/imageView1"

@@ -8,12 +8,20 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.widget.Toast;
  
 public class GPSManager
 {
         private static final int gpsMinTime = 5000;
         private static final int gpsMinDistance = 10;
+=======
+ 
+public class GPSManager
+{
+        private static final int gpsMinTime = 500;
+        private static final int gpsMinDistance = 0;
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
          
         private static LocationManager locationManager = null;
         private static LocationListener locationListener = null;
@@ -107,6 +115,10 @@ public class GPSManager
                 }
                 catch (final Exception ex)
                 {
+<<<<<<< HEAD
+=======
+                         
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
                 }
         }
 }

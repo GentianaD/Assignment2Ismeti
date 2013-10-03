@@ -5,29 +5,47 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:divider="?android:attr/listDivider"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:background="@drawable/bcg3"
     tools:context=".MainActivity"
      >
+=======
+	android:background="@drawable/background_carbon"
+    tools:context=".MainActivity">
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+<<<<<<< HEAD
         android:gravity="center"
+=======
+        android:background="@drawable/bicyclebcg_normal"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/imgBikeSide"
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="70dp"
             android:contentDescription="@string/BikeDesc"
             android:gravity="center"
+=======
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/BikeDesc"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
             android:src="@drawable/side" />
 
         <ImageView
             android:id="@+id/imgBikeFront"
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/BikeDesc"
@@ -42,6 +60,31 @@
         android:layout_above="@+id/imageView1"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/linearLayout1" />
+=======
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/BikeDesc"
+            android:src="@drawable/front" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/speedobcg_normal">
+        <com.example.gpsexample.Drawing
+	        android:id="@+id/view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="5dp"
+	        android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <Button
         android:id="@+id/btnRecTrack"
@@ -51,6 +94,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:onClick="btnRecTrackonClick"
+<<<<<<< HEAD
+=======
+        android:textColor="@android:color/white"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/strBtnrecord" />
 
     <TextView
@@ -60,6 +107,10 @@
         android:layout_alignBaseline="@+id/textView1"
         android:layout_alignBottom="@+id/textView1"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
+=======
+        android:textColor="@android:color/white"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/Auto" />
 
     <TextView
@@ -69,6 +120,10 @@
         android:layout_above="@+id/seekBar"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="17dp"
+<<<<<<< HEAD
+=======
+        android:textColor="@android:color/white"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/Off" />
 
     <TextView
@@ -77,13 +132,22 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"
         android:layout_alignParentRight="true"
+<<<<<<< HEAD
+=======
+        android:textColor="@android:color/white"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:layout_marginRight="17dp"
         android:text="@string/On" />
 
     <ImageView
         android:id="@+id/imageView1"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+=======
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/BikeDesc"
@@ -95,6 +159,10 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnRecTrack"
         android:layout_alignParentLeft="true"
+<<<<<<< HEAD
+=======
+        android:layout_alignParentRight="true"
+>>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:max="2"
         android:progress="0" />
 
