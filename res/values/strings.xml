@@ -8,7 +8,7 @@
     <string name="title_activity_device_speed_demo">DeviceSpeedDemoActivity</string>
     <string name="info">Waiting for GPS signal...</string>
     <string name="about_menu_name">About</string>
-    <string name="about_message">Sample application to demonstrate GPS device speed in Android.</string>
+    <string name="about_message">Sample application to demonstrate GPS device speed in Android !! </string>
     <string name="unit_km">Kilometer</string>
     <string name="unit_miles">Miles</string>
     <string name="setting_unit">Measurement Unit</string>
@@ -21,12 +21,12 @@
     <string name="Speed">"Speed: "</string>
     <string name="DistanceRes">0 m</string>
     <string name="timeRes">0 Hour(s) 0 Minutes(s) 0 Second(s)</string>
-    <string name="SpeedRes">0 Km/h</string>
+    <string name="SpeedRes">0 km/h</string>
     <string name="BtnText">Start</string>
     <string name="Off">OFF</string>
     <string name="Auto">Auto</string>
     <string name="On">ON</string>
     <string name="strBtnrecord">Record Track</string>
-    <string name="BikeDesc">Bike Picture</string>
+    <string name="BikeDesc">Bike Picture ...</string>
 
 </resources>
