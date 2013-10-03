@@ -2,10 +2,12 @@ package assignments.ismeti;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -184,7 +186,7 @@ implements OnMyLocationButtonClickListener,
 	        }
 	    }
 	    @SuppressLint("NewApi")
-	    //min API req. 16
+	    //to avoid min API req. 16
 		public void buttonClick(View v)
 	    {
 	    	if(k==1)
@@ -194,6 +196,7 @@ implements OnMyLocationButtonClickListener,
 	    		btn.setText("Start");
 	    		btn.setBackground(getResources().getDrawable(R.drawable.btnstart));
         		btn.invalidate();
+        		showAlertMessage("Track Completed!\n\nTotal Distance: "+tdistance.getText()+"\n\nTime: "+ttime.getText()+"\n\nAverage Speed: "+tspeed.getText());		
 	    	}
 	    	else 
 	    	{
@@ -232,7 +235,14 @@ implements OnMyLocationButtonClickListener,
 			time +=1;
 			}
 			String result="";
-			result=Integer.toString(time/3600)+" Hour(s) "+Integer.toString(time/60)+" Minutes(s) "+ Integer.toString(time%60)+" Second(s)";
+			if(getResources().getConfiguration().locale==Locale.GERMAN)
+			{
+				result=Integer.toString(time/3600)+" Hour(s) "+Integer.toString(time/60)+" Minutes(s) "+ Integer.toString(time%60)+" Second(s)";
+			}
+			else
+			{
+				result=Integer.toString(time/3600)+" Stunde(n) "+Integer.toString(time/60)+" Minute(n) "+ Integer.toString(time%60)+" Sekunde(n)";
+			}
 			if(time>3600*24)
 			{
 				time=0;
@@ -319,6 +329,12 @@ implements OnMyLocationButtonClickListener,
 		    double nC = 2 * Math.atan2( Math.sqrt(nA), Math.sqrt( 1 - nA ));
 		    float nD = (float) (nRadius * nC);
 		    return nD; // Return our calculated distance
+		}
+		public void showAlertMessage(String msg) {
+			AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
+			dlgAlert.setMessage(msg);
+			dlgAlert.setPositiveButton("OK", null);
+			dlgAlert.create().show();
 		}
 }
 
