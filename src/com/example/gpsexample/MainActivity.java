@@ -1,21 +1,9 @@
 package com.example.gpsexample;
 
-<<<<<<< HEAD
-
-
-
-
-
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-=======
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 import android.hardware.Camera;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -108,11 +96,7 @@ public void onCreate(Bundle savedInstanceState)
     d=(Drawing)findViewById(R.id.view);
     
     seekbar=(SeekBar)findViewById(R.id.seekBar);
-<<<<<<< HEAD
-    if(lightSensor==null)
-=======
     if(lightSensor==null || !getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH))
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
     {
     	seekbar.setEnabled(false);
     }
@@ -203,12 +187,8 @@ public void onCreate(Bundle savedInstanceState)
     {
         location.getLatitude();
         location.getLongitude();
-<<<<<<< HEAD
-       SPEED=speed;
-=======
         speed = location.getSpeed();
         SPEED=speed;
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
     	d.invalidate();
             
     }
@@ -283,11 +263,7 @@ public void onCreate(Bundle savedInstanceState)
 		    	{
 		    	float cl = event.values[0];
 		        
-<<<<<<< HEAD
-		       if(cl<=(float)35 && cl>1)
-=======
 		       if(cl<=(float)30 && cl>1)
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 		       {
 		    	   try
 		    	   {
@@ -365,11 +341,7 @@ public void onCreate(Bundle savedInstanceState)
 			 calpitch=(int) Math.toDegrees(prefValues[1]);
      		 calroll=(int) Math.toDegrees(prefValues[2]);
 	        }
-<<<<<<< HEAD
-	        else if(mRotation==Surface.ROTATION_180)
-=======
 	        else if(mRotation==Surface.ROTATION_0)
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 	        {
 	        	 calpitch=(int) orientationValues[1];
 	     		 calroll=(int) orientationValues[2]; 	

@@ -5,31 +5,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:divider="?android:attr/listDivider"
-<<<<<<< HEAD
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
-
-    <com.example.gpsexample.Drawing
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/imageView1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/imgBikeSide" />
-
-    <ImageView
-        android:id="@+id/imgBikeSide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="26dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/BikeDesc"
-        android:gravity="center"
-        android:src="@drawable/side" />
-=======
     android:background="@drawable/background_carbon"
     tools:context=".MainActivity" >
 
@@ -81,7 +56,6 @@
 			    android:src="@drawable/front" />
 			
 	</LinearLayout>
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
     <Button
         android:id="@+id/btnRecTrack"
@@ -89,14 +63,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-        android:layout_alignRight="@+id/view"
-        android:onClick="btnRecTrackonClick"
-=======
         android:layout_alignRight="@+id/relativeLayout"
         android:onClick="btnRecTrackonClick"
         android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/strBtnrecord" />
 
     <SeekBar
@@ -105,11 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnRecTrack"
         android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-        android:layout_alignRight="@+id/view"
-=======
         android:layout_alignRight="@+id/relativeLayout"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:max="2"
         android:progress="0" />
 
@@ -120,10 +85,7 @@
         android:layout_above="@+id/seekBar"
         android:layout_marginLeft="132dp"
         android:layout_toRightOf="@+id/textView1"
-<<<<<<< HEAD
-=======
         android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/Auto" />
 
     <TextView
@@ -132,10 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"
         android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-=======
         android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/Off" />
 
     <TextView
@@ -144,42 +103,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
-<<<<<<< HEAD
-        android:layout_alignRight="@+id/view"
-        android:layout_marginRight="14dp"
-=======
         android:layout_alignRight="@+id/relativeLayout"
         android:layout_marginRight="14dp"
         android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:text="@string/On" />
 
     <ImageView
         android:id="@+id/imageView1"
-<<<<<<< HEAD
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-=======
         android:layout_width="25dp"
         android:layout_height="25dp"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
         android:layout_above="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
         android:contentDescription="@string/BikeDesc"
         android:src="@drawable/torch" />
 
-<<<<<<< HEAD
-    <ImageView
-        android:id="@+id/imgBikeFront"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imgBikeSide"
-        android:layout_alignTop="@+id/imageView1"
-        android:layout_marginRight="36dp"
-        android:contentDescription="@string/BikeDesc"
-        android:gravity="center"
-        android:src="@drawable/front" />
-
-=======
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 </RelativeLayout>

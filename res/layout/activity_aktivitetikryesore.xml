@@ -2,11 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-<<<<<<< HEAD
-  android:orientation="vertical">
-=======
   android:background="@drawable/background_carbon">
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
   <Button
       android:id="@+id/btnStartStop"
@@ -14,14 +10,10 @@
       android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
       android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-      android:onClick="buttonClick"
-=======
       android:layout_below="@+id/map"
       android:onClick="buttonClick"
       android:background="@drawable/btnstart"
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/BtnText" />
 
   <fragment
@@ -38,10 +30,7 @@
       android:layout_height="wrap_content"
       android:layout_above="@+id/map"
       android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/Speed" />
 
   <TextView
@@ -50,10 +39,7 @@
       android:layout_height="wrap_content"
       android:layout_above="@+id/txtSpeed"
       android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/Time" />
 
   <TextView
@@ -62,10 +48,7 @@
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_alignParentTop="true"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/Distanc" />
 
   <TextView
@@ -74,10 +57,7 @@
       android:layout_height="wrap_content"
       android:layout_below="@+id/txtTime"
       android:layout_toRightOf="@+id/txtDistance"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/SpeedRes" />
 
   <TextView
@@ -86,10 +66,7 @@
       android:layout_height="wrap_content"
       android:layout_above="@+id/txtSpeedRes"
       android:layout_toRightOf="@+id/txtDistance"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/timeRes" />
 
   <TextView
@@ -98,10 +75,7 @@
       android:layout_height="wrap_content"
       android:layout_alignLeft="@+id/txtTimeRes"
       android:layout_alignParentTop="true"
-<<<<<<< HEAD
-=======
       android:textColor="@android:color/white"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
       android:text="@string/DistanceRes" />
 
 </RelativeLayout>

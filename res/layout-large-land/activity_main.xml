@@ -4,27 +4,6 @@
     android:id="@+id/ll1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-<<<<<<< HEAD
-
-    android:divider="?android:attr/listDivider"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
-
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="255dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/view"
-        android:orientation="vertical" >
-
-        <ImageView
-            android:id="@+id/imgBikeSide"
-            android:layout_width="wrap_content"
-            android:layout_height="252dp"
-            android:layout_marginRight="20dp"
-=======
     android:divider="?android:attr/listDivider"
     android:background="@drawable/background_carbon"
     tools:context=".MainActivity">
@@ -74,101 +53,22 @@
             android:layout_width="200dp"
             android:layout_height="160dp"
             android:layout_marginBottom="80dp"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/side" />
 
         <ImageView
             android:id="@+id/imgBikeFront"
-<<<<<<< HEAD
-            android:layout_width="183dp"
-            android:layout_height="132dp"
-=======
             android:layout_width="80dp"
             android:layout_height="140dp"
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/front" />
 
     </LinearLayout>
-<<<<<<< HEAD
-
-
-        <TextView
-            android:id="@+id/On"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:text="@string/On"
-            android:textColor="@android:color/white" />
-
     
-
-    <com.example.gpsexample.Drawing
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/imageView1"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnRecTrack"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="25dp"
-        android:max="2"
-        android:progress="0" />
-
-=======
-    
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
     <Button
         android:id="@+id/btnRecTrack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:onClick="btnRecTrackonClick"
-        android:text="@string/strBtnrecord" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/Auto"
-        android:textColor="@android:color/white" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/seekBar"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="17dp"
-        android:text="@string/Off"
-        android:textColor="@android:color/white" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_marginRight="204dp"
-        android:layout_toLeftOf="@+id/On"
-        android:contentDescription="@string/BikeDesc"
-        android:src="@drawable/torch" />
-=======
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignLeft="@+id/relativeLayout"
@@ -223,6 +123,5 @@
 	        android:progress="0" />
     </RelativeLayout>
     
->>>>>>> e8801f4f146c9f4cc5cf9f5dcfe525e3f217fbcb
 
 </RelativeLayout>
