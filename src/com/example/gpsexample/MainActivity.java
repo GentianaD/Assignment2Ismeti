@@ -108,7 +108,7 @@ public void onCreate(Bundle savedInstanceState)
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			if(seekbar.getProgress()==0)
+			if(seekbar.getProgress()==0 || !getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH))
 			{
 				lightlistener(0);
 				try
