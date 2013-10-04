@@ -4,50 +4,64 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:divider="?android:attr/listDivider"
-	android:background="@drawable/background_carbon"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_carbon">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/bicyclebcg_normal"
-        android:orientation="horizontal" >
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/bicyclebcg_large" >
 
         <ImageView
             android:id="@+id/imgBikeSide"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="9dp"
-            android:layout_marginTop="25dp"
+            android:layout_width="265dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="3dp"
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/side" />
 
         <ImageView
             android:id="@+id/imgBikeFront"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="265dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="30dp"
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/front" />
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/imgTorch"
         android:layout_below="@+id/linearLayout1"
-        android:background="@drawable/speedobcg_normal">
+        android:background="@drawable/speedobcg_large" >
+
         <assignment2.ismeti.Drawing
-	        android:id="@+id/view"
-	        android:layout_width="wrap_content"
-	        android:layout_height="match_parent"
-	        android:layout_marginTop="5dp"
-	        android:layout_alignParentLeft="true"/>
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
     </RelativeLayout>
     
+
+ <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRecTrack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:max="2"
+        android:progress="0" />
 
     <Button
         android:id="@+id/btnRecTrack"
@@ -86,27 +100,17 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"
         android:layout_alignParentRight="true"
-        android:textColor="@android:color/white"
         android:layout_marginRight="17dp"
+        android:textColor="@android:color/white"
         android:text="@string/On" />
 
     <ImageView
         android:id="@+id/imgTorch"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/txtAuto"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/BikeDesc"
         android:src="@drawable/torch" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnRecTrack"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:max="2"
-        android:progress="0" />
 
 </RelativeLayout>

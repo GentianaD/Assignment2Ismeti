@@ -11,14 +11,16 @@
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_toLeftOf="@+id/On"
+        android:layout_marginLeft="33dp"
         android:background="@drawable/bicyclebcg_normal"
         android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/imgBikeSide"
-            android:layout_width="140dp"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="9dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="25dp"
             android:contentDescription="@string/BikeDesc"
             android:src="@drawable/side" />
@@ -26,7 +28,7 @@
         <ImageView
             android:id="@+id/imgBikeFront"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="58dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/BikeDesc"
@@ -36,16 +38,19 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_above="@+id/imgTorch"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/linearLayout1"
-        android:background="@drawable/speedobcg_normal">
+        android:background="@drawable/speedobcg_normal" >
+
         <assignment2.ismeti.Drawing
-	        android:id="@+id/view"
-	        android:layout_width="wrap_content"
-	        android:layout_height="match_parent"
-	        android:layout_marginTop="5dp"
-	        android:layout_alignParentLeft="true"/>
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp" />
+
     </RelativeLayout>
     
 
@@ -58,20 +63,21 @@
         android:layout_alignParentRight="true"
         android:onClick="btnRecTrackonClick"
         android:textColor="@android:color/white"
-        android:text="@string/strBtnrecord" />
+        android:text="@string/strBtnrecord"
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:id="@+id/txtAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtOff"
-        android:layout_alignBottom="@+id/txtOff"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
         android:text="@string/Auto" />
 
     <TextView
-        android:id="@+id/txtOff"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/seekBar"
